@@ -1,6 +1,6 @@
 # A small model, a narrow task, and a useful comparison
 
-**Unpublished working draft. Official-test outcome pending.** All BANKING77 numbers below are development results. Do not publish this version as the final experiment report. Final billing is also pending; account credit and spending limits are not experiment costs.
+**Unpublished working draft.** The official result is included below. This article still needs independent claim and rights review before publication. Final provider billing is pending; account credit and spending limits are not experiment costs.
 
 I started with a practical question: what can a small post-training experiment actually buy?
 
@@ -77,13 +77,17 @@ The result does not establish a general finance model. We did not test investmen
 
 BANKING77 has been public since 2020. We cannot verify that it was absent from the base model's pretraining. Exact duplicate handling also does not eliminate semantic overlap. Some queries have ambiguous category boundaries, and matching the benchmark label is not always equivalent to a uniquely correct interpretation.
 
-This was one seed and one bounded epoch. Development supported checkpoint selection; it was not the final confirmatory evaluation.
+This was one seed and one bounded epoch. Development supported checkpoint selection; the publisher's official test provided the final comparison on the fixed selected checkpoint.
 
-## Official test: pending
+## The official held-out comparison
 
-**Editor placeholder:** Add the completed paired official-test result only after both model runs, prediction integrity checks, selection-receipt checks, and overlap audit are verified. Report the unchanged full official denominator and the separately labeled clean-subset sensitivity analysis. Include macro-F1, accuracy, paired macro-F1 interval, and malformed-output counts. Do not select or tune a checkpoint after viewing official results.
+After the development gate passed, the selected adapter and untouched model each ran once on all **3,080** official test queries. Both used the same taxonomy-constrained greedy decoder. The selected adapter reached **0.8444 macro-F1 and 84.87% accuracy (2,614/3,080)**. Untouched Nemotron reached **0.4134 macro-F1 and 42.53% accuracy (1,310/3,080)**. The paired macro-F1 gain was **0.4311**, with a 95% complete-group bootstrap interval of **[0.4152, 0.4492]**.
 
-**Editor placeholder:** Add verified resource teardown and distinguish final provider billing from runtime-based cost estimates. Do not use the $100 account balance or $10 reservation as a reported experiment cost.
+Unconstrained generation produced 396 malformed labels from the untouched model and five from the adapter. That diagnostic is separate from the constrained primary score. An overlap/conflict audit flagged five official rows: three overlapping capped train or development records and two within-test conflicting-label rows. The audit did not check unused publisher training rows. All five remained in the 3,080-row primary denominator. Excluding them only as a sensitivity check gave 0.4132 macro-F1 for the base and 0.8444 for the adapter, with a paired gain of 0.4313 and 95% interval [0.4155, 0.4495]. The conclusion did not change.
+
+Both inference receipts cover all 3,080 rows. The saved predictions, adapter, dataset export, selection record, and evaluation source were archived locally with checksums. An independent local evaluation reproduced every per-row outcome and every metric within floating-point tolerance. No checkpoint or decoder was changed after viewing official results.
+
+The Runpod RTX 4090 pod was deleted after export, and a subsequent account query showed no remaining pods. At the quoted GPU and disk rates, this pod cost approximately **$2.03** by elapsed time. The earlier synthetic pilot was estimated at **$1.22**, so combined estimated spend was about **$3.25**. Final provider billing remains unconfirmed. The reported $100 account credit was an available balance, not experiment spend.
 
 For now, the useful lesson is about scope. A few thousand examples and a short adapter run changed a small model's behavior substantially on a narrow language task. The earlier synthetic experiment showed why that improvement has to be measured at the task level: correct JSON, correct evidence, correct arithmetic, and correct intent classification are different capabilities.
 
@@ -98,4 +102,4 @@ For now, the useful lesson is about scope. A few thousand examples and a short a
 - CPU comparator: local evidence archive `results/cpu-baselines/report.json`.
 - Model pinned revision: `nvidia/Nemotron-Mini-4B-Instruct`, `791833e92ebddb0bc2c1007f6d2b6764f886a2ae`.
 - BANKING77 dataset attribution: PolyAI, CC BY 4.0; preserve `experiments/banking77/DATA_ATTRIBUTION.md` and `DATA_LICENSE` in any associated release. Dataset license is separate from model licensing.
-- No official-test outcome was read or incorporated into this draft. It remains unpublished; the private source repository is a working archive, not a public result.
+- Official-test aggregate result: `results/BANKING77.md`; full predictions, selection and inference receipts, hashes, and local replay remain in the local evidence archive. This draft remains unpublished; the private source repository is a working archive, not a public result.

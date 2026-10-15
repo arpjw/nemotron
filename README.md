@@ -7,9 +7,9 @@ Independent research on narrow post-training tasks using the pinned `nvidia/Nemo
 | Experiment | Task | Current evidence |
 |---|---|---|
 | [Synthetic finance snippets](experiments/synthetic-finance/) | Extract and calculate values from fictional snippets | One-epoch adapter reached 42% exact correctness on 400 development examples, from 0% for the untouched model. Gains were concentrated in abstention and formatting; numeric reasoning remained weak. A deterministic parser solved all 400, so this is not a useful finance-expertise claim. |
-| [BANKING77 intents](experiments/banking77/) | Classify a banking-support query into one of 77 publisher labels | One-epoch QLoRA on 2,308 capped training examples. On 1,993 development examples, constrained macro-F1 was 0.82978 versus 0.39915 for untouched Nemotron. The selected checkpoint passed the prospective development gate. The publisher's 3,080-row official test is being evaluated once. |
+| [BANKING77 intents](experiments/banking77/) | Classify a banking-support query into one of 77 publisher labels | One-epoch QLoRA on 2,308 capped training examples. On the publisher's 3,080-row official test, constrained macro-F1 was 0.84443 versus 0.41337 for untouched Nemotron. The paired gain was 0.43105, 95% interval [0.41517, 0.44919]. |
 
-The BANKING77 development comparison uses the same prompt, model revision, and taxonomy-constrained decoder in both conditions. A paired complete-group bootstrap estimated a macro-F1 gain of 0.43063 with a 95% interval of [0.41004, 0.45460]. This interval describes the fixed development split and does not capture training-seed or domain uncertainty. A TF-IDF logistic comparator scored 0.82852 macro-F1 on the same development data; the goal here is improvement over untouched Nemotron, not superiority over that smaller classifier.
+The [BANKING77 result report](results/BANKING77.md) separates checkpoint selection on development from the one-time official comparison. Both models used the same prompt, model revision, and taxonomy-constrained decoder. The paired official interval describes this fixed benchmark and does not capture training-seed or domain uncertainty. A TF-IDF logistic comparator scored 0.82852 macro-F1 on development; the goal here is improvement over untouched Nemotron, not superiority over that smaller classifier.
 
 ## Layout
 

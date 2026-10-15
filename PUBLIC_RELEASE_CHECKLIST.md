@@ -7,9 +7,9 @@ This repository is private. The checklist records work needed before changing vi
 - [x] Pin the Nemotron checkpoint revision and BANKING77 publisher commit.
 - [x] Freeze training/development splits, protocol, active gate, prompts, and deterministic decoding.
 - [x] Compare the selected adapter with untouched Nemotron under the same development procedure.
-- [ ] Preserve the one-time official-test release and both complete official inference receipts in the local evidence archive.
-- [ ] Finish the official paired evaluation, independent checksum replay, and final limitations review.
-- [ ] Separate exploratory synthetic results, development selection, and official held-out results in every public claim.
+- [x] Preserve the one-time official-test release and both complete official inference receipts in the local evidence archive.
+- [x] Finish the official paired evaluation, independent checksum replay, and final limitations review in `results/BANKING77.md`.
+- [x] Separate exploratory synthetic results, development selection, and official held-out results in the result reports and article draft.
 - [ ] Review every final public claim for the documented one-seed, historical-benchmark, and finance-scope limits.
 
 ## Rights and attribution
@@ -23,15 +23,16 @@ This repository is private. The checklist records work needed before changing vi
 ## Repository hygiene
 
 - [x] Keep raw publisher test references, weights, tokenizers, fitted `.joblib` models, runtime logs, pod receipts, and credentials out of tracked source.
+- [x] Run the hosted offline protocol workflow on the private default branch: [initial passing run](https://github.com/arpjw/nemotron/actions/runs/38820318874).
 - [ ] Run a full tracked-file secret and personal-path scan immediately before any visibility change.
 - [ ] Verify the public bundle has no SSH host, personal filesystem path, account identifier, or unreviewed operational receipt.
-- [ ] Run the CPU test suite in a fresh environment and the documented GPU replay if affordable and scientifically justified.
+- [x] Run both full CPU suites in a fresh Python 3.11 environment and independently replay the official evaluation from archived predictions.
 - [ ] Check that published result tables match the immutable manifests and hashes in the local evidence archive.
 - [ ] Confirm the repository default branch, README, links, citation, and issue/security contact are appropriate for public readers.
 
 ## Publication
 
-- [ ] Resolve editorial placeholders in `writing/ARTICLE_DRAFT.md` from final official results and final billing evidence.
+- [x] Replace official-result editorial placeholders in `writing/ARTICLE_DRAFT.md`; identify runtime-based cost estimates as estimates pending final provider billing.
 - [ ] Independently review the article's benchmark and finance claims against the result report.
 - [ ] Decide whether to publish source, result report, adapter, and article together or in separate steps.
 - [ ] Obtain explicit approval for changing repository visibility or publishing the article.
