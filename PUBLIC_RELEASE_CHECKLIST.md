@@ -10,7 +10,7 @@ This repository is private. The checklist records work needed before changing vi
 - [ ] Preserve the one-time official-test release and both complete official inference receipts in the local evidence archive.
 - [ ] Finish the official paired evaluation, independent checksum replay, and final limitations review.
 - [ ] Separate exploratory synthetic results, development selection, and official held-out results in every public claim.
-- [ ] State that one seed and a historical benchmark do not establish broad finance ability or contamination-free transfer.
+- [ ] Review every final public claim for the documented one-seed, historical-benchmark, and finance-scope limits.
 
 ## Rights and attribution
 

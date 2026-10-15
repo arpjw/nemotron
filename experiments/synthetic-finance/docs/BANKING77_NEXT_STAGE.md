@@ -1,6 +1,6 @@
 # Next stage: BANKING77
 
-The implemented follow-on project is `../../banking77-nemotron`. Its detailed prospective protocol is `docs/PROTOCOL.md`, with acquisition hashes in `data/raw/source_manifest.json` and immutable split metadata in `data/frozen/manifest.json`.
+The implemented follow-on project is `../../banking77`. Its detailed prospective protocol is `docs/PROTOCOL.md`, with acquisition hashes in `data/raw/source_manifest.json` and immutable split metadata in `data/frozen/manifest.json`.
 
 Task: classify banking-support messages into 77 publisher intents. [PolyAI's repository](https://github.com/PolyAI-LDN/task-specific-datasets) and [official dataset card](https://huggingface.co/datasets/PolyAI/banking77/blob/main/README.md) report 10,003 training and 3,080 test examples. The dataset is [CC BY 4.0](https://github.com/PolyAI-LDN/task-specific-datasets/blob/master/LICENSE); preserve attribution, license and change notices. [Original paper](https://aclanthology.org/2020.nlp4convai-1.5/).
 

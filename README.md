@@ -21,7 +21,7 @@ The BANKING77 development comparison uses the same prompt, model revision, and t
 
 ## Reproduction boundaries
 
-The pinned Nemotron model revision is `791833e92ebddb0bc2c1007f6d2b6764f886a2ae`. GPU dependency versions and exact commands are documented in each experiment's `docs/MODEL_RUNTIME.md`. Run tests from each experiment directory with `PYTHONPATH=src python -m unittest discover -s tests -q`. BANKING77 frozen train/development records are included under the publisher's CC BY 4.0 terms; the raw publisher test and released official references are intentionally outside the source bundle. A fresh acquisition must verify the publisher commit and hashes in `experiments/banking77/data/raw/source_manifest.json`.
+The pinned Nemotron model revision is `791833e92ebddb0bc2c1007f6d2b6764f886a2ae`. GPU dependency versions and exact commands are documented in each experiment's `docs/MODEL_RUNTIME.md`. The full local suites use Python 3.11 with `requirements-validation.txt`; run `PYTHONPATH=src python -m unittest discover -s tests -q` from each experiment directory. The pull-request workflow runs smaller standard-library protocol suites. BANKING77 frozen train/development records are included under the publisher's CC BY 4.0 terms; the raw publisher test and released official references are intentionally outside the source bundle. A fresh acquisition must verify the publisher commit and hashes in `experiments/banking77/data/raw/source_manifest.json`.
 
 ## Scope and rights
 

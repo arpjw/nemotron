@@ -1,4 +1,4 @@
-# Tested for package availability, not yet validated together on CUDA.
+# Validated together on one RTX 4090 CUDA pilot; exact environment receipt is retained locally.
 # Python 3.11; install torch from https://download.pytorch.org/whl/cu124 first.
 torch==2.6.0
 transformers==4.51.3

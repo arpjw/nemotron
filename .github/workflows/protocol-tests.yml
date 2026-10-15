@@ -1,0 +1,27 @@
+name: Protocol tests
+
+on:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  offline-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Synthetic data, scoring, and guard tests
+        working-directory: experiments/synthetic-finance
+        env:
+          PYTHONPATH: src
+        run: python -m unittest tests.test_data tests.test_scoring tests.test_calculator tests.test_runpod_guard tests.test_runpod_scripts -q
+      - name: BANKING77 data, evaluation, and sealed-test guard tests
+        working-directory: experiments/banking77
+        env:
+          PYTHONPATH: src
+        run: python -m unittest tests.test_data tests.test_evaluation tests.test_sealed_test tests.test_test_guard -q

@@ -4,7 +4,7 @@
 
 I started with a practical question: what can a small post-training experiment actually buy?
 
-The model was NVIDIA's Nemotron-Mini-4B-Instruct. The account had $100 of Runpod credit, but that was room to experiment, not a target to spend. The work used bounded GPU runs, saved artifacts, and explicit stopping points.
+The model was NVIDIA's Nemotron-Mini-4B-Instruct. The researcher reported $100 of Runpod credit, but that was room to experiment, not a target to spend. The work used bounded GPU runs, saved artifacts, and explicit stopping points.
 
 The first task exposed a limitation. The second produced a substantial improvement over the untouched model on a specific classification benchmark. A simple CPU classifier also did surprisingly well.
 
@@ -91,12 +91,11 @@ For now, the useful lesson is about scope. A few thousand examples and a short a
 
 ## Internal evidence map, remove or convert before publication
 
-- Synthetic corrected runs and calculator results: `outputs/nemotron-mini-finance/results/pilot-20261015/RESULTS.md`; full epoch comparison and calculator report in that directory. Exploratory only; initial leaked results excluded.
-- BANKING77 design and limits: `outputs/banking77-nemotron/docs/PROTOCOL.md` and `docs/GATE_V2.json`.
-- Verified completed training: `outputs/banking77-nemotron/results/gpu-pilot/epoch-adapter/run_manifest.json`, `training_log.jsonl`, saved adapter/config checksums.
-- Primary development results and intervals: `outputs/banking77-nemotron/results/gpu-pilot/dev-comparison.json`.
-- Examples and class analysis: `outputs/banking77-nemotron/results/gpu-pilot/DEV_ERROR_ANALYSIS.md`.
-- CPU comparator: `outputs/banking77-nemotron/results/cpu-baselines/report.json`.
+- Synthetic corrected runs and calculator results: `results/SYNTHETIC_FINANCE.md`; full predictions and calculator report remain in the local evidence archive. Exploratory only; initial leaked results excluded.
+- BANKING77 design and limits: `experiments/banking77/docs/PROTOCOL.md` and `experiments/banking77/docs/GATE_V2.json`.
+- Verified completed training: local evidence archive `epoch-adapter/run_manifest.json`, `training_log.jsonl`, and saved adapter/config checksums. Binary adapters are excluded from Git.
+- Primary development results and intervals: local evidence archive `dev-comparison.json`; reviewed analysis in `results/BANKING77_DEV_ERROR_ANALYSIS.md`.
+- CPU comparator: local evidence archive `results/cpu-baselines/report.json`.
 - Model pinned revision: `nvidia/Nemotron-Mini-4B-Instruct`, `791833e92ebddb0bc2c1007f6d2b6764f886a2ae`.
-- BANKING77 dataset attribution: PolyAI, CC BY 4.0; preserve `DATA_ATTRIBUTION.md` and `DATA_LICENSE` in any associated release. Dataset license is separate from model licensing.
-- No official-test outcome was read or incorporated while drafting this version. Unpublished; no website or repository changes made.
+- BANKING77 dataset attribution: PolyAI, CC BY 4.0; preserve `experiments/banking77/DATA_ATTRIBUTION.md` and `DATA_LICENSE` in any associated release. Dataset license is separate from model licensing.
+- No official-test outcome was read or incorporated into this draft. It remains unpublished; the private source repository is a working archive, not a public result.
