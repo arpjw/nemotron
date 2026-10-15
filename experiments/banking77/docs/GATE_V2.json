@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "reason": "User clarified primary objective: improve untouched Nemotron",
+  "prospective_timing": "before BANKING77 GPU training and model evaluation",
+  "supersedes": "data/frozen/manifest.json prospective_gate only",
+  "data_manifest_sha256": "a4e3ad3e475d4f5921cf74a1f20827af83f79a0fabbdb5f007f8ea1f557dc533",
+  "primary_metric": "constrained_macro_f1",
+  "macro_f1_at_least": 0.75,
+  "gain_over_base_at_least": 0.05,
+  "paired_macro_f1_lower_95_strictly_above": 0,
+  "bootstrap": {
+    "samples": 2000,
+    "seed": 871,
+    "unit": "complete normalized duplicate group",
+    "taxonomy": "all 77 fixed labels"
+  },
+  "tfidf_role": "contextual comparator; not a success requirement",
+  "final_test": "single selected checkpoint and untouched base once after development selection"
+}

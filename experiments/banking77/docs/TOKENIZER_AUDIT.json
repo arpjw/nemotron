@@ -1,0 +1,18 @@
+{
+  "taxonomy_count": 77,
+  "max_label_tokens_with_eos": 17,
+  "splits": {
+    "train": {
+      "rows": 2308,
+      "max_sequence": 736,
+      "max_prompt_plus_generation": 760,
+      "sha256": "b3bbbfcf2edc0569050534687c0106c088daa473e89cf0d6e7d675e1f4426166"
+    },
+    "dev": {
+      "rows": 1993,
+      "max_sequence": 733,
+      "max_prompt_plus_generation": 759,
+      "sha256": "a59211afa638b5152a67c1be704393e5caa133613bbc4bca0f0475ee314a81f4"
+    }
+  }
+}

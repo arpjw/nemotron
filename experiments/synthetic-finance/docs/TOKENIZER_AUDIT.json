@@ -1,0 +1,39 @@
+{
+  "model_revision": "791833e92ebddb0bc2c1007f6d2b6764f886a2ae",
+  "full_model_weights_downloaded_locally": false,
+  "purpose": "generator 1.0.1 tokenizer-length audit only; no model inference or quality scores",
+  "splits": {
+    "train": {
+      "records": 2400,
+      "sha256": "bb532ff73be807c604f9fb0cf2848e7485dcbfe5540894f7bbed5b103bdae1cd",
+      "max_training_tokens": 705,
+      "min_training_tokens": 555,
+      "max_prompt_tokens": 670,
+      "max_prompt_plus_192": 862
+    },
+    "dev": {
+      "records": 400,
+      "sha256": "015038ff85f701a3f633dcffb0fc285e2ae8701bb235d7f6076d021dc9b904d4",
+      "max_training_tokens": 676,
+      "min_training_tokens": 565,
+      "max_prompt_tokens": 642,
+      "max_prompt_plus_192": 834
+    },
+    "test": {
+      "records": 600,
+      "sha256": "54ce51a8d5dd083ec2c41c4500dae338b49933ba0bce76179386ea6e56d98763",
+      "max_training_tokens": 705,
+      "min_training_tokens": 560,
+      "max_prompt_tokens": 670,
+      "max_prompt_plus_192": 862
+    },
+    "robustness": {
+      "records": 200,
+      "sha256": "2922a60415003ef6d8da4dd762f95da04ad31a77a587775e4d019bac2570f15f",
+      "max_training_tokens": 687,
+      "min_training_tokens": 565,
+      "max_prompt_tokens": 654,
+      "max_prompt_plus_192": 846
+    }
+  }
+}

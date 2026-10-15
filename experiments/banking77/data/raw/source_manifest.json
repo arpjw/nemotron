@@ -1,0 +1,35 @@
+{
+  "commit": "57ec275d8078af65b7731c2a98be812d844a6d6b",
+  "source": "https://github.com/PolyAI-LDN/task-specific-datasets",
+  "license": "CC-BY-4.0",
+  "files": {
+    "train.csv": {
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/train.csv",
+      "git_blob_sha1": "98e2543cf482d0dca7bfb175ebe35d98efad95be",
+      "sha256": "b06e26ac675513959a63135f11b94ea7786ed02da65db93a5650d8838cbc664b",
+      "bytes": 839073,
+      "sealed": false
+    },
+    "test.csv": {
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/test.csv",
+      "git_blob_sha1": "799687a8367359432985b8b13d85a2baf73f92dd",
+      "sha256": "d12d6e3bc4c3103966ae786dc435913c0c563dfa328f5a3646d0e62cfeeb474d",
+      "bytes": 239961,
+      "sealed": true
+    },
+    "categories.json": {
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/banking_data/categories.json",
+      "git_blob_sha1": "cdd2a5c77a4079a455f8fb7e751d1ecee0e2a5a4",
+      "sha256": "53261da888122daf2d120d925458631d9619e15d82e56052e7a42e535ce32b63",
+      "bytes": 2036,
+      "sealed": false
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/PolyAI-LDN/task-specific-datasets/57ec275d8078af65b7731c2a98be812d844a6d6b/LICENSE",
+      "git_blob_sha1": "2f244ac814036ecd9ba9f69782e89ce6b1dca9eb",
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661",
+      "bytes": 18650,
+      "sealed": false
+    }
+  }
+}

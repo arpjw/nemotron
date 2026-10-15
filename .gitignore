@@ -1,0 +1,37 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_ed25519*
+*credentials*
+*secret*
+
+# Python and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Model weights, tokenizers, and fitted baselines
+**/adapter_model.safetensors
+**/tokenizer.json
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.joblib
+
+# Runtime artifacts and operational metadata
+**/runs/
+**/raw/train.csv
+**/raw/test.csv
+**/sealed-official-test/
+**/pod_receipt.json
+**/*.log
+**/environment.json
+.DS_Store

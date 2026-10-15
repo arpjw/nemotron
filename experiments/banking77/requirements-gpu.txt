@@ -1,0 +1,11 @@
+# Tested for package availability, not yet validated together on CUDA.
+# Python 3.11; install torch from https://download.pytorch.org/whl/cu124 first.
+torch==2.6.0
+transformers==4.51.3
+peft==0.15.2
+accelerate==1.6.0
+bitsandbytes==0.45.5
+safetensors==0.5.3
+tokenizers==0.21.1
+huggingface-hub==0.30.2
+numpy==2.2.5

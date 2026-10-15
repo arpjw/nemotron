@@ -1,0 +1,11 @@
+# Next stage: BANKING77
+
+The implemented follow-on project is `../../banking77-nemotron`. Its detailed prospective protocol is `docs/PROTOCOL.md`, with acquisition hashes in `data/raw/source_manifest.json` and immutable split metadata in `data/frozen/manifest.json`.
+
+Task: classify banking-support messages into 77 publisher intents. [PolyAI's repository](https://github.com/PolyAI-LDN/task-specific-datasets) and [official dataset card](https://huggingface.co/datasets/PolyAI/banking77/blob/main/README.md) report 10,003 training and 3,080 test examples. The dataset is [CC BY 4.0](https://github.com/PolyAI-LDN/task-specific-datasets/blob/master/LICENSE); preserve attribution, license and change notices. [Original paper](https://aclanthology.org/2020.nlp4convai-1.5/).
+
+Pinned commit: `57ec275d8078af65b7731c2a98be812d844a6d6b`. Acquired files matched publisher Git blob SHA-1s; raw SHA-256s are stored separately. Those hash types are not interchangeable.
+
+The seed-20261015 normalized-duplicate-group split produces 2,308 capped training examples and 1,993 development examples. Official test data remains opaque, hash-verified and unevaluated. Baselines are majority classification, locked word/character TF-IDF logistic regression, and the untouched model under identical prompts/decoding. Protocol amendment 2, made before BANKING77 GPU training or model evaluation, sets the primary gate to constrained macro-F1 ≥0.75, gain over untouched Nemotron ≥0.05 absolute, and a paired group bootstrap 95% lower bound above zero for macro-F1 gain. TF-IDF is a contextual comparator, not a required hurdle. This supersedes the older gate retained in the immutable data manifest; see the follow-on project’s `docs/GATE_V2.json`.
+
+Because BANKING77 has been public since 2020, pretraining contamination remains unknown. The task tests banking language classification, not financial analysis. Select one checkpoint on development, then evaluate it and untouched Nemotron once on the official test with the same final criteria. No official test score should guide model changes. An optional 40-query, human-authored and independently human-labeled challenge is specified in the full protocol; it is not yet created and will use no official test examples or model-generated labels.
