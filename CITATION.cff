@@ -1,0 +1,7 @@
+cff-version: 1.2.0
+message: "If you use this experiment, please cite the repository and credit BANKING77 and the base model separately."
+title: "Nemotron small-model post-training experiments"
+authors:
+  - family-names: Somu
+    given-names: Arya
+repository-code: "https://github.com/arpjw/nemotron"
