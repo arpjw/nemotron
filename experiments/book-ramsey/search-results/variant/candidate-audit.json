@@ -1,0 +1,14 @@
+[
+  {
+    "blue_violations": 36,
+    "degree_condition_excess": 0,
+    "file": "block_circulant-1720.json",
+    "loss": 117,
+    "method": "block_circulant",
+    "parity_condition_excess": 0,
+    "red_edges": 162,
+    "red_violations": 72,
+    "seed": 1720,
+    "valid": false
+  }
+]

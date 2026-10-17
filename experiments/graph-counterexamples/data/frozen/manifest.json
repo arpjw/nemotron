@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "dev": 30,
+    "test": 30,
+    "train": 120
+  },
+  "files": {
+    "dev.jsonl": "bf5deb18972b3cace7e2daab3e0013b1b12f8b156f5fec1cc8c7e6e340168fbb",
+    "test.jsonl": "e0c3cf398ca7eab3d78b048d949c41df61a989f2bdc9602f0625104c2e8fd3d5",
+    "train.jsonl": "f78312561757c7b4c16995420695009a59b2ce1406caf740009ce07ae73601e8"
+  },
+  "partition": "disjoint ordered invariant pairs; task signatures unique within split",
+  "seed": 20261015,
+  "version": 1
+}

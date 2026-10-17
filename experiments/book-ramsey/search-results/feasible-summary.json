@@ -1,0 +1,35 @@
+[
+  {
+    "accepted": 10258,
+    "best_loss": 117,
+    "best_step": 509535,
+    "elapsed_seconds": 30.0,
+    "evaluated": 629071,
+    "infeasible": 729460,
+    "method": "feasible_flip",
+    "proposals": 1358531,
+    "seed": 1114
+  },
+  {
+    "accepted": 10496,
+    "best_loss": 115,
+    "best_step": 148531,
+    "elapsed_seconds": 30.0,
+    "evaluated": 629680,
+    "infeasible": 769861,
+    "method": "feasible_flip",
+    "proposals": 1399541,
+    "seed": 1215
+  },
+  {
+    "accepted": 9964,
+    "best_loss": 119,
+    "best_step": 898548,
+    "elapsed_seconds": 30.0,
+    "evaluated": 624295,
+    "infeasible": 719523,
+    "method": "feasible_flip",
+    "proposals": 1343818,
+    "seed": 1316
+  }
+]

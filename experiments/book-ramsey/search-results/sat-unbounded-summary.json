@@ -1,0 +1,18 @@
+{
+  "blue_book": 9,
+  "build_seconds": 0.058,
+  "clauses": 175033,
+  "elapsed_seconds": 90.05,
+  "known_graph_fixed": false,
+  "n": 27,
+  "red_book": 4,
+  "result": "timeout",
+  "solver": "glucose4",
+  "stats": {
+    "conflicts": 1328355,
+    "decisions": 3542943,
+    "propagations": 2244883636,
+    "restarts": 7388
+  },
+  "variables": 77103
+}

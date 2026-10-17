@@ -1,0 +1,19 @@
+[
+  {
+    "accepted": 692,
+    "best_loss": 117,
+    "best_step": 85164,
+    "counts": [
+      0,
+      2,
+      2,
+      6,
+      6,
+      2
+    ],
+    "elapsed_seconds": 30.0,
+    "method": "block_circulant",
+    "proposals": 537470,
+    "seed": 1720
+  }
+]

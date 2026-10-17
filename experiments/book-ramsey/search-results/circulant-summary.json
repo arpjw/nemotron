@@ -1,0 +1,24 @@
+{
+  "best_count": 9,
+  "best_distances": [
+    1,
+    2,
+    6,
+    7,
+    10,
+    12
+  ],
+  "best_loss": 135,
+  "exact_check_of_one_best": {
+    "blue_edges": 189,
+    "blue_violations": 54,
+    "max_blue_pages": 9,
+    "max_red_pages": 4,
+    "n": 27,
+    "red_edges": 162,
+    "red_violations": 81,
+    "valid": false
+  },
+  "family": "27-vertex undirected circulants with 6 of 13 step distances",
+  "scanned": 1716
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "blue_violations": 24,
+    "degree_condition_excess": 0,
+    "file": "feasible_flip-1114.json",
+    "loss": 112,
+    "method": "feasible_flip",
+    "parity_condition_excess": 0,
+    "red_edges": 157,
+    "red_violations": 66,
+    "seed": 1114,
+    "valid": false
+  },
+  {
+    "blue_violations": 27,
+    "degree_condition_excess": 0,
+    "file": "feasible_flip-1215.json",
+    "loss": 122,
+    "method": "feasible_flip",
+    "parity_condition_excess": 0,
+    "red_edges": 157,
+    "red_violations": 70,
+    "seed": 1215,
+    "valid": false
+  },
+  {
+    "blue_violations": 27,
+    "degree_condition_excess": 0,
+    "file": "feasible_flip-1316.json",
+    "loss": 117,
+    "method": "feasible_flip",
+    "parity_condition_excess": 0,
+    "red_edges": 157,
+    "red_violations": 68,
+    "seed": 1316,
+    "valid": false
+  }
+]

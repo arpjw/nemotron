@@ -1,0 +1,29 @@
+[
+  {
+    "accepted": 10216,
+    "best_loss": 108,
+    "best_step": 15125,
+    "elapsed_seconds": 30.0,
+    "method": "block_circulant",
+    "proposals": 554341,
+    "seed": 1417
+  },
+  {
+    "accepted": 13309,
+    "best_loss": 108,
+    "best_step": 188,
+    "elapsed_seconds": 30.0,
+    "method": "block_circulant",
+    "proposals": 550296,
+    "seed": 1518
+  },
+  {
+    "accepted": 13426,
+    "best_loss": 108,
+    "best_step": 15542,
+    "elapsed_seconds": 30.0,
+    "method": "block_circulant",
+    "proposals": 549247,
+    "seed": 1619
+  }
+]

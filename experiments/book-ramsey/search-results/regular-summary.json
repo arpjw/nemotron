@@ -1,0 +1,32 @@
+[
+  {
+    "accepted": 40656,
+    "best_loss": 113,
+    "best_step": 827832,
+    "elapsed_seconds": 45.0,
+    "evaluated": 987789,
+    "method": "regular_switch",
+    "proposals": 3369734,
+    "seed": 811
+  },
+  {
+    "accepted": 41146,
+    "best_loss": 109,
+    "best_step": 2689802,
+    "elapsed_seconds": 45.0,
+    "evaluated": 984105,
+    "method": "regular_switch",
+    "proposals": 3355118,
+    "seed": 912
+  },
+  {
+    "accepted": 40803,
+    "best_loss": 113,
+    "best_step": 1029420,
+    "elapsed_seconds": 45.0,
+    "evaluated": 980324,
+    "method": "regular_switch",
+    "proposals": 3338108,
+    "seed": 1013
+  }
+]

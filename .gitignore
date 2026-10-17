@@ -35,3 +35,6 @@ venv/
 **/*.log
 **/environment.json
 .DS_Store
+
+# Private graph-pilot operational report
+experiments/graph-counterexamples/results/RUNPOD_PILOT.md
