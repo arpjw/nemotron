@@ -14,7 +14,7 @@ Independent research on narrow post-training tasks using the pinned `nvidia/Nemo
 
 The [BANKING77 result report](results/BANKING77.md) separates checkpoint selection on development from the one-time official comparison. Both models used the same prompt, model revision, and taxonomy-constrained decoder. The paired official interval describes this fixed benchmark and does not capture training-seed or domain uncertainty. A TF-IDF logistic comparator scored 0.82852 macro-F1 on development; the goal here is improvement over untouched Nemotron, not superiority over that smaller classifier.
 
-The book graph-repair study has a [research article](writing/BOOK_GRAPH_REPAIR.md) and [public release record](experiments/book-ramsey/PUBLIC_RELEASE.md). Its results concern one-step local repair; the selected adapter and per-state predictions remain in the private evidence archive.
+The book graph-repair study has a [published article](https://aryasomu.com/writing/nemotron-graph-repair.html), [article source](writing/BOOK_GRAPH_REPAIR.md), and [public release record](experiments/book-ramsey/PUBLIC_RELEASE.md). Its results concern one-step local repair; the selected adapter and per-state predictions remain in the private evidence archive.
 
 The trained adapter is [Nemotron Mini 4B Banking](https://huggingface.co/arpjw/Nemotron-Mini-4B-Banking) on a separate Hugging Face model page. That page contains the adapter, model card, notices, and model-license texts; this source repository contains no model weights. The accompanying article is [I post-trained Nemotron 4B into an Average Banker](https://aryasomu.com/writing/nemotron-average-banker.html).
 
